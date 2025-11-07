@@ -1,0 +1,449 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DocumentEditor</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Joyfill
+                    </a>            </div>
+            <div class="library-version">2.0.0-RC7
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":editor:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="editor::joyfill.editors.document/DocumentEditor///PointingToDeclaration//1918071238">
+  <div class="breadcrumbs"><a href="../../index.html">editor</a><span class="delimiter">/</span><a href="../index.html">joyfill.editors.document</a><span class="delimiter">/</span><span class="current">DocumentEditor</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Document</span><wbr><span><span>Editor</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">DocumentEditor</a> : <a href="../../../api/joyfill/-mappable/index.html">Mappable</a></div><p class="paragraph">High-level editor for a <a href="../../../api/joyfill/-document/index.html">Document</a>.</p><p class="paragraph">Provides access to fields and pages, mutation helpers, and validation. Mutations write through to the underlying <a href="../../../api/joyfill/-document/index.html">Document</a> and may trigger condition re-evaluation, visibility changes, and dependent formula updates.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-474291948%2FProperties%2F1918071238" anchor-label="capturedEvents" id="-474291948%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="captured-events.html"><span>captured</span><wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-474291948%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="captured-events.html">capturedEvents</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../joyfill.editors.event/-event-capture/index.html">EventCapture</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">In-memory record of events captured while editing.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="364395751%2FProperties%2F1918071238" anchor-label="error" id="364395751%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="error.html"><span><span>error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="364395751%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="error.html">error</a><span class="token operator">: </span><span data-unresolved-link="cinematic/Live///PointingToDeclaration/">Live</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/joyfill/-error/index.html">Error</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Reactive error stream; when non-null, <a href="validate.html">validate</a> returns invalid.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-7296206%2FProperties%2F1918071238" anchor-label="fields" id="-7296206%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fields.html"><span><span>fields</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-7296206%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="fields.html">fields</a><span class="token operator">: </span><a href="../../joyfill.collections/-field-collection/index.html">FieldCollection</a></div><div class="brief "><p class="paragraph">Collection interface to access and locate component editors.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1363928592%2FProperties%2F1918071238" anchor-label="id" id="1363928592%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1363928592%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Stable identifier; assigning updates the underlying document.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-359443390%2FProperties%2F1918071238" anchor-label="identifier" id="-359443390%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="identifier.html"><span><span>identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-359443390%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="identifier.html">identifier</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Optional external identifier; assigning updates the underlying document.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1671621408%2FProperties%2F1918071238" anchor-label="name" id="1671621408%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1671621408%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Human-readable document name; assigning updates the underlying document.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-897004885%2FProperties%2F1918071238" anchor-label="pages" id="-897004885%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pages.html"><span><span>pages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-897004885%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="pages.html">pages</a><span class="token operator">: </span><a href="../../joyfill.collections/-page-collection/index.html">PageCollection</a></div><div class="brief "><p class="paragraph">Page collection with navigation and visibility controls.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1856623439%2FProperties%2F1918071238" anchor-label="stage" id="-1856623439%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stage.html"><span><span>stage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1856623439%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="stage.html">stage</a><span class="token operator">: </span><a href="../../../api/joyfill/-stage/index.html">Stage</a></div><div class="brief "><p class="paragraph">Current workflow stage; assigning updates the underlying document.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1059394369%2FProperties%2F1918071238" anchor-label="views" id="1059394369%2FProperties%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="views.html"><span><span>views</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1059394369%2FProperties%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="views.html">views</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/joyfill/-view/index.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">All views aggregated from the document's files. Read-only snapshot.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1383626746%2FFunctions%2F1918071238" anchor-label="append" id="-1383626746%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.editors.document.helper/append.html"><span><span>append</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1383626746%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">DocumentEditor</a><span class="token punctuation">.</span><a href="../../joyfill.editors.document.helper/append.html"><span class="token function">append</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fieldId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">targetIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">cellUpdates<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../builder/joyfill.table/-column/index.html">Column</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rowId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">schemaId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">parentPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Appends a new row to a table at a specified target index.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="559235653%2FFunctions%2F1918071238" anchor-label="change" id="559235653%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.editors.document.helper/change.html"><span><span>change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="559235653%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">DocumentEditor</a><span class="token punctuation">.</span><a href="../../joyfill.editors.document.helper/change.html"><span class="token function">change</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">changeLogs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../joyfill.events/-change-log/index.html">ChangeLog</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Applies a change log to the document editor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2075929725%2FFunctions%2F1918071238" anchor-label="columnsFor" id="-2075929725%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.editors.document.helper/columns-for.html"><span>columns</span><wbr><span><span>For</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2075929725%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">DocumentEditor</a><span class="token punctuation">.</span><a href="../../joyfill.editors.document.helper/columns-for.html"><span class="token function">columnsFor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fieldId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">schemaId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../builder/joyfill.table/-column/index.html">Column</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Retrieves the columns for a specific table field.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-49479221%2FFunctions%2F1918071238" anchor-label="get" id="-49479221%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-49479221%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">R</a><span class="token operator">&gt; </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get.html">R</a></div><div class="brief "><p class="paragraph">Fetch an arbitrary top-level value from the document, cast to <a href="get.html">R</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-858476990%2FFunctions%2F1918071238" anchor-label="integrity" id="-858476990%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="integrity.html"><span><span>integrity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-858476990%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="integrity.html"><span class="token function">integrity</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../joyfill.tools.validation/-fields-validity/index.html">FieldsValidity</a></div><div class="brief "><p class="paragraph">Validate data integrity across fields. Implementation typically aggregates per-component validity for the active scope.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-615771524%2FFunctions%2F1918071238" anchor-label="move" id="-615771524%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.editors.document.helper/move.html"><span><span>move</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-615771524%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">DocumentEditor</a><span class="token punctuation">.</span><a href="../../joyfill.editors.document.helper/move.html"><span class="token function">move</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fieldId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">rowId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">schemaId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves a table row to a new position within the table.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1588064490%2FFunctions%2F1918071238" anchor-label="remove" id="-1588064490%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.editors.document.helper/remove.html"><span><span>remove</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1588064490%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">DocumentEditor</a><span class="token punctuation">.</span><a href="../../joyfill.editors.document.helper/remove.html"><span class="token function">remove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fieldId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">rowId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">schemaId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Removes a specific row from a table.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1379312043%2FFunctions%2F1918071238" anchor-label="resolveConditions" id="1379312043%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resolve-conditions.html"><span>resolve</span><wbr><span><span>Conditions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1379312043%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="resolve-conditions.html"><span class="token function">resolveConditions</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Recompute conditional logic (hide/disable, etc.). Updates component/page visibility and may trigger dependent value recomputation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1017322362%2FFunctions%2F1918071238" anchor-label="set" id="1017322362%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set.html"><span><span>set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1017322362%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set an arbitrary top-level key/value on the document. May affect conditions or formulas that reference the key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1337729237%2FFunctions%2F1918071238" anchor-label="toDocument" id="1337729237%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-document.html"><span>to</span><wbr><span><span>Document</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1337729237%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-document.html"><span class="token function">toDocument</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../api/joyfill/-document/index.html">Document</a></div><div class="brief "><p class="paragraph">Return the underlying mutable <a href="../../../api/joyfill/-document/index.html">Document</a> reference.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-842821294%2FFunctions%2F1918071238" anchor-label="toJsonObject" id="-842821294%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.events/-change-log/index.html#-842821294%2FFunctions%2F1918071238"><span>to</span><wbr><span>Json</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-842821294%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../joyfill.events/-change-log/index.html#-842821294%2FFunctions%2F1918071238"><span class="token function">toJsonObject</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1715436352%2FFunctions%2F1918071238" anchor-label="toJsonString" id="-1715436352%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.events/-change-log/index.html#-1715436352%2FFunctions%2F1918071238"><span>to</span><wbr><span>Json</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1715436352%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../joyfill.events/-change-log/index.html#-1715436352%2FFunctions%2F1918071238"><span class="token function">toJsonString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1453935771%2FFunctions%2F1918071238" anchor-label="toMap" id="-1453935771%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.tools.validation/-fields-validity/index.html#-1453935771%2FFunctions%2F1918071238"><span>to</span><wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1453935771%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../joyfill.tools.validation/-fields-validity/index.html#-1453935771%2FFunctions%2F1918071238"><span class="token function">toMap</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="381806666%2FFunctions%2F1918071238" anchor-label="update" id="381806666%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../joyfill.editors.document.helper/update.html"><span><span>update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="381806666%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">DocumentEditor</a><span class="token punctuation">.</span><a href="../../joyfill.editors.document.helper/update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fieldId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">cellUpdates<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../builder/joyfill.table/-column/index.html">Column</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rowId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">schemaId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates a table row with new cell values.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1719973877%2FFunctions%2F1918071238" anchor-label="validate" id="1719973877%2FFunctions%2F1918071238" data-filterable-set=":editor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":editor:dokkaHtmlPartial/commonMain" data-filterable-set=":editor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="validate.html"><span><span>validate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1719973877%2FFunctions%2F1918071238"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":editor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="validate.html"><span class="token function">validate</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../joyfill.tools.validation/-fields-validity/index.html">FieldsValidity</a></div><div class="brief "><p class="paragraph">Validates the current state of the fields within the document editor. This method ensures data consistency and checks the overall integrity of the fields, typically aggregating validity across individual components within the active scope or context.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
