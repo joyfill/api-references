@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API References</title>
+    <meta name="description" content="Navigate to API references for Kotlin, iOS, and JavaScript.">
+    <style>
+        :root {
+            --bg: #0b0f14;
+            --panel: #121821;
+            --panel-border: #283244;
+            --text: #e6eef8;
+            --muted: #9fb0c6;
+            --link: #7cc4ff;
+            --link-hover: #b3e1ff;
+            --accent: #4aa3ff33;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(1200px 600px at 20% -10%, #102337 0%, transparent 60%),
+                radial-gradient(800px 500px at 120% 20%, #13283f 0%, transparent 60%),
+                var(--bg);
+            color: var(--text);
+            font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        header h1 {
+            margin: 0 0 8px 0;
+            font-size: 28px;
+            letter-spacing: 0.2px;
+        }
+
+        header p {
+            margin: 0 0 28px 0;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            display: block;
+            background: linear-gradient(180deg, var(--panel) 0%, #0f1520 100%);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--radius);
+            padding: 18px 18px 20px 18px;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: #3a4b66;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(220px 120px at 20% 0%, var(--accent), transparent 60%);
+            pointer-events: none;
+        }
+
+        .card h2 {
+            margin: 0 0 6px 0;
+            font-size: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            color: var(--muted);
+            font-size: 12px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .eyebrow .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #53d76a;
+            box-shadow: 0 0 0 2px #53d76a22;
+        }
+
+        .footer {
+            margin-top: 36px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--link);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+    </style>
+    <!--
+    This is a simple landing page for GitHub Pages that links to generated API references.
+    Place your generated documentation into:
+      - /kotlin/  (e.g., Dokka output)
+      - /ios/     (e.g., DocC static site output)
+      - /js/      (e.g., TypeDoc or similar)
+    Each directory should contain an index.html (or default) that GitHub Pages can serve.
+  -->
+    <base href="./">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>API References</h1>
+            <p>Browse the generated SDK documentation for each platform.</p>
+        </header>
+
+        <section class="grid" aria-label="Platform API References">
+            <a class="card" href="kotlin/" aria-label="Open Kotlin API reference">
+                <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Kotlin</div>
+                <h2>Kotlin / JVM</h2>
+                <p>View Dokka-generated reference documentation.</p>
+            </a>
+
+            <a class="card" href="ios/" aria-label="Open iOS API reference">
+                <div class="eyebrow"><span class="dot" aria-hidden="true"></span> iOS</div>
+                <h2>iOS (Swift)</h2>
+                <p>View DocC-generated reference documentation.</p>
+            </a>
+
+            <a class="card" href="js/" aria-label="Open JavaScript API reference">
+                <div class="eyebrow"><span class="dot" aria-hidden="true"></span> JavaScript</div>
+                <h2>JavaScript</h2>
+                <p>View web SDK reference documentation.</p>
+            </a>
+        </section>
+    </main>
+</body>
+<script>
+    // Optional: if someone lands on a hash URL that doesn't exist here,
+    // keep the location but ensure links remain relative.
+    (function () {
+        try {
+            var base = document.querySelector('base');
+            if (base && !base.href.endsWith('/')) base.href += '/';
+        } catch (e) { }
+    })();
+</script>
+
+</html>
