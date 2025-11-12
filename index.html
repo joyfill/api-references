@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>API References</title>
-    <meta name="description" content="Navigate to API references for Kotlin, iOS, and JavaScript.">
+    <meta name="description" content="Navigate to API references for Kotlin and iOS.">
     <style>
         :root {
             --bg: #0b0f14;
@@ -58,7 +58,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 16px;
         }
 
@@ -148,7 +148,6 @@
     Place your generated documentation into:
       - /kotlin/  (e.g., Dokka output)
       - /ios/     (e.g., DocC static site output)
-      - /js/      (e.g., TypeDoc or similar)
     Each directory should contain an index.html (or default) that GitHub Pages can serve.
   -->
     <base href="./">
@@ -172,12 +171,6 @@
                 <div class="eyebrow"><span class="dot" aria-hidden="true"></span> iOS</div>
                 <h2>iOS (Swift)</h2>
                 <p>View DocC-generated reference documentation.</p>
-            </a>
-
-            <a class="card" href="js/" aria-label="Open JavaScript API reference">
-                <div class="eyebrow"><span class="dot" aria-hidden="true"></span> JavaScript</div>
-                <h2>JavaScript</h2>
-                <p>View web SDK reference documentation.</p>
             </a>
         </section>
     </main>
