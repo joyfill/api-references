@@ -14,13 +14,9 @@ joyfill.table.internal
 templates
 module:compose
 joyfill
-joyfill.collection.filter
-joyfill.date
-joyfill.number
 joyfill.page
 joyfill.tooling
 joyfill.utils
-joyfill.utils.textFlow
 module:editor
 joyfill.collections
 joyfill.editors.barcode
@@ -28,9 +24,7 @@ joyfill.editors.block
 joyfill.editors.chart
 joyfill.editors.collection
 joyfill.editors.collection.entries
-joyfill.editors.collection.internal
 joyfill.editors.components
-joyfill.editors.components.internal
 joyfill.editors.date
 joyfill.editors.document
 joyfill.editors.document.helper
@@ -48,7 +42,6 @@ joyfill.editors.text
 joyfill.editors.text_area
 joyfill.editors.utils
 joyfill.events
-joyfill.events.internal
 joyfill.tools
 joyfill.tools.validation
 joyfill.tools.visibility
