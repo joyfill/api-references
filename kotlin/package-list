@@ -64,6 +64,7 @@ joyfill.dropdown
 joyfill.file
 joyfill.image
 joyfill.internal
+joyfill.metadata
 joyfill.multi_select
 joyfill.number
 joyfill.schemas
