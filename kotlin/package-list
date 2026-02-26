@@ -57,6 +57,7 @@ joyfill.collection
 joyfill.components
 joyfill.components.internal
 joyfill.conditions
+joyfill.conditions.column
 joyfill.conditions.field
 joyfill.conditions.table
 joyfill.date
