@@ -27,6 +27,7 @@ joyfill.editors.collection
 joyfill.editors.collection.entries
 joyfill.editors.components
 joyfill.editors.date
+joyfill.editors.decorator
 joyfill.editors.document
 joyfill.editors.document.helper
 joyfill.editors.dropdown
