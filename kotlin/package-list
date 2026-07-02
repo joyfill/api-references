@@ -19,6 +19,7 @@ joyfill.page
 joyfill.tooling
 joyfill.utils
 module:editor
+joyfill
 joyfill.collections
 joyfill.editors.barcode
 joyfill.editors.block
