@@ -44,7 +44,7 @@
                     </a>
             </div>
             <div class="library-version">
-2.0.0-RC33            </div>
+2.0.0-RC34            </div>
         </div>
     </div>
     <div class="navigation-controls">
@@ -138,6 +138,15 @@
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
         </span></div>
       <p class="paragraph">If you are on Android/Desktop, you can load the file from assets/resources and pass its content string to rememberDocumentEditor.</p>
+      <p class="paragraph">For landscape layouts and Android keyboard integration, see ./docs/architecture/v2/ui-components.md#responsive-design.</p>
+      <h4 class=""> Screen rotation (Android)</h4>
+      <p class="paragraph">When an Android activity is recreated (for example when the phone is rotated and your app does not set <code class="lang-kotlin">android:configChanges</code>), the form keeps what is open on screen: table and collection views, row forms, filters, date pickers, signature, image and chart dialogs.</p>
+      <p class="paragraph">Your app must keep the <code class="lang-kotlin">DocumentEditor</code> itself, because it holds the user's answers. <code class="lang-kotlin">rememberDocumentEditor</code> does not survive recreation: it creates a new editor and unsaved answers are lost. On Android, create the editor in a <code class="lang-kotlin">ViewModel</code> instead:</p>
+      <div class="sample-container">
+        <pre><code class="block lang-kotlin" theme="idea">class FormViewModel(json: String) : ViewModel() {<br>    val editor = editorOf(json = json)<br>}<br><br>@Composable<br>fun FormScreen(viewModel: FormViewModel) {<br>    Form(editor = viewModel.editor)<br>}</code></pre>
+<span class="top-right-position"><span class="copy-icon"></span>
+          <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
+        </span></div>
       <h4 class=""> Listen for form changes (Log changes)</h4>
       <p class="paragraph">You can observe focus/blur, file uploads, image capture, and all field changes. Logging changes is as simple as printing the events.</p>
       <div class="sample-container">
